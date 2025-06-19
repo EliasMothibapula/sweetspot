@@ -1,0 +1,175 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Ensures consistent sizing across elements */
+}
+
+/* Navbar Styling */
+.NavBar {
+    background: #945719; /* Navbar background color */
+    padding-left: 50px; /* Left padding for content */
+    font-weight: bold; /* Bold font for navbar text */
+}
+
+/* Body Styling */
+body {
+    font-family: 'Segoe UI', sans-serif; /* Sets the font family for the body */
+}
+
+/* Header Background */
+header {
+    background: linear-gradient(to right, #ffb347, #ffcc33); /* Gradient background for the header */
+}
+
+/* Image Styling */
+img {
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Ensures images fit within their containers */
+}
+
+/* Footer Styling */
+footer {
+    margin-top: 50px; /* Adds space above the footer */
+}
+
+/* Logo Styling */
+#logo {
+    font-size: 23px; /* Font size for the logo text */
+    color: white; /* Logo text color */
+}
+#logo img {
+    margin-bottom: 15px; /* Adds space below the logo image */
+}
+
+/* Dropdown Menu Styling */
+.nav-item.dropdown:hover .dropdown-menu {
+    display: block; /* Shows the dropdown menu on hover */
+}
+
+.dropdown-menu {
+    margin-top: 0; /* Removes extra spacing above dropdown menu */
+    border-radius: 0; /* Removes rounded corners */
+}
+
+/* Navbar Height Reduction */
+.navbar {
+    height: 60px; /* Sets the navbar height */
+    padding: 0; /* Removes extra padding */
+}
+
+/* Slogan Section Styling */
+header {
+    height: 30px; /* Matches the height of the navbar */
+    padding: 0; /* Removes extra padding */
+    display: flex; /* Enables flexbox layout */
+    align-items: center; /* Centers content vertically */
+    justify-content: center; /* Centers content horizontally */
+    font-size: 1rem; /* Sets font size for the header */
+}
+
+header h1 {
+    font-size: 1.0rem; /* Adjusts heading size */
+    margin: 0; /* Removes extra margin */
+}
+
+header p {
+    font-size: 0.7rem; /* Adjusts paragraph size */
+    margin: 0; /* Removes extra margin */
+}
+
+/* Navbar Logo Styling */
+.navbar-logo {
+    height: 60px; /* Sets the logo height */
+    width: auto; /* Maintains aspect ratio */
+    margin-right: 10px; /* Adds space to the right of the logo */
+    object-fit: contain; /* Ensures the logo fits within its container */
+    border-radius: 10px; /* Adds rounded corners to the logo */
+}
+
+/* Reduce Yellow Header Space */
+header.bg-warning {
+    padding: 2rem 1rem !important; /* Reduces padding for the yellow header */
+}
+
+/* Custom CSS for Better Mobile Layout */
+@media (max-width: 768px) {
+    /* Stack Product Items Vertically */
+    .row.text-center > div {
+        flex: 0 0 100%; /* Forces items to take full width */
+        max-width: 100%; /* Ensures items don't exceed container width */
+    }
+
+    /* Navbar Brand Styling for Mobile */
+    .navbar-brand {
+        display: flex; /* Enables flexbox layout */
+        align-items: center; /* Centers content vertically */
+        gap: 10px; /* Adds spacing between logo and text */
+    }
+
+    /* Reduce Header Padding on Mobile */
+    header.bg-warning {
+        padding: 1rem; /* Reduces padding for smaller screens */
+    }
+
+    /* Adjust Image Styling for Mobile */
+    .img-fluid.rounded {
+        border-radius: 10px; /* Adds rounded corners to images */
+        margin-bottom: 15px; /* Adds spacing below images */
+    }
+
+    /* Adjust Navbar Height for Mobile */
+    .navbar {
+        height: auto; /* Allows navbar to adjust height dynamically */
+    }
+
+    /* Adjust Font Sizes for Mobile */
+    header h1 {
+        font-size: 1.2rem; /* Slightly smaller heading size */
+    }
+
+    header p {
+        font-size: 0.9rem; /* Slightly smaller paragraph size */
+    }
+}
+
+/* Optional: Rounded Image Corners and Spacing */
+.img-fluid.rounded {
+    border-radius: 15px; /* Adds rounded corners to images */
+    margin-bottom: 10px; /* Adds spacing below images */
+}
+/* Video Background Styling */
+.video-container {
+    position: fixed; /* Position the video absolutely */
+    top: 0;
+    left: 0;
+    width: 100%; /* Make the video cover the entire width */
+    height: 100%; /* Make the video cover the entire height */
+    z-index: -1; /* Send the video to the background */
+    overflow: hidden; /* Prevent overflow */
+}
+
+#bg-video {
+    width: 100%; /* Ensure the video fills the container */
+    height: 100%;
+    object-fit: cover; /* Ensure the video covers the container without distortion */
+}
+
+/* Content Styling */
+.content {
+    position: relative; /* Position content relative to ensure it layers above the video */
+    z-index: 1; /* Bring content above the video */
+}
+
+/* Header Styling */
+header {
+    position: relative; /* Ensure the header is layered above the video */
+    z-index: 1; /* Bring the header above the video */
+    color: #000; /* Ensure text is visible */
+}
+
+/* Footer Styling */
+footer {
+    position: relative; /* Ensure footer is layered above the video */
+    z-index: 1; /* Bring the footer above the video */
+}
