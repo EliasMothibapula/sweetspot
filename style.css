@@ -5,6 +5,29 @@
     box-sizing: border-box; /* Ensures consistent sizing across elements */
 }
 
+
+
+/* Gold Text Styling */
+.text-gold {
+    color: gold; /* Set text color to gold */
+    font-weight: bold; /* Optional: Make the text bold */
+}
+
+/* Custom Styling for Order Now Button */
+/* Override Bootstrap Styling for Order Now Button */
+.order-now-btn {
+    background-color: white !important; /* Set background to white */
+    border-color: green !important; /* Set border color to green */
+    color: green !important; /* Set text color to green */
+    font-weight: bold; /* Optional: Make the text bold */
+}
+
+/* Hover Effect for Order Now Button */
+.order-now-btn:hover {
+    background-color: green !important; /* Change background color to green */
+    border-color: green !important; /* Keep border color green */
+    color: white !important; /* Change text color to white */
+}
 /* Navbar Styling */
 .NavBar {
     background: #945719; /* Navbar background color */
@@ -20,6 +43,28 @@ body {
 /* Header Background */
 header {
     background: linear-gradient(to right, #ffb347, #ffcc33); /* Gradient background for the header */
+}
+
+
+/* Hero Header Background */
+.hero-header {
+    background: url('Images/hero.jpg') no-repeat center center; /* Set the background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    color: #fff; /* Ensure text is visible */
+    position: relative; /* Position the hero section */
+    z-index: 1; /* Ensure it layers correctly */
+}
+
+/* Optional: Add overlay for better text visibility */
+.hero-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Add a semi-transparent overlay */
+    z-index: -1; /* Place the overlay behind the content */
 }
 
 /* Image Styling */
@@ -138,38 +183,263 @@ header.bg-warning {
     border-radius: 15px; /* Adds rounded corners to images */
     margin-bottom: 10px; /* Adds spacing below images */
 }
-/* Video Background Styling */
-.video-container {
-    position: fixed; /* Position the video absolutely */
-    top: 0;
-    left: 0;
-    width: 100%; /* Make the video cover the entire width */
-    height: 100%; /* Make the video cover the entire height */
-    z-index: -1; /* Send the video to the background */
-    overflow: hidden; /* Prevent overflow */
-}
-
-#bg-video {
-    width: 100%; /* Ensure the video fills the container */
-    height: 100%;
-    object-fit: cover; /* Ensure the video covers the container without distortion */
-}
-
-/* Content Styling */
-.content {
-    position: relative; /* Position content relative to ensure it layers above the video */
-    z-index: 1; /* Bring content above the video */
-}
-
-/* Header Styling */
-header {
-    position: relative; /* Ensure the header is layered above the video */
-    z-index: 1; /* Bring the header above the video */
-    color: #000; /* Ensure text is visible */
-}
 
 /* Footer Styling */
-footer {
-    position: relative; /* Ensure footer is layered above the video */
-    z-index: 1; /* Bring the footer above the video */
+.container-fluid.bg-dark {
+    background-color: #111; /* Dark background */
+    color: #fff; /* White text */
+}
+
+.container-fluid.bg-dark h1, .container-fluid.bg-dark h4 {
+    color: #ffcc33; /* Highlighted text color */
+}
+
+.container-fluid.bg-dark p {
+    font-size: 0.9rem; /* Smaller text for compact layout */
+}
+
+.container-fluid.bg-dark .btn {
+    border-radius: 50%; /* Circular buttons for social media */
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.input-group .form-control {
+    border-radius: 0; /* Remove rounded corners */
+}
+
+.input-group .btn {
+    border-radius: 0; /* Remove rounded corners */
+}
+
+
+/* Order Form Styling */
+#orderForm {
+    background-color: #f8f9fa; /* Light background for the form */
+    border: 1px solid #ddd; /* Add a border */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding inside the form */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
+}
+
+#orderForm h2 {
+    color: #28a745; /* Green heading color */
+    font-weight: bold; /* Make the heading bold */
+}
+
+#orderForm .form-label {
+    font-weight: bold; /* Make labels bold */
+    color: #333; /* Darker text for labels */
+}
+
+#orderForm .form-control, #orderForm .form-select {
+    border-radius: 5px; /* Rounded corners for inputs */
+    border: 1px solid #ccc; /* Add a border */
+}
+
+#orderForm .btn-success {
+    background-color: #28a745; /* Green button */
+    border-color: #28a745; /* Green border */
+    font-weight: bold; /* Make button text bold */
+}
+
+#orderForm .btn-success:hover {
+    background-color: #218838; /* Darker green on hover */
+    border-color: #1e7e34; /* Darker green border on hover */
+}
+
+/* Menu tab container */
+.nav-pills {
+    background-color: #1f1f1f; /* black background */
+    border: 2px solid #ffffff1a;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    display: inline-flex;
+    gap: 1.5rem;
+  }
+  
+  /* Each tab button */
+  .nav-pills .nav-link {
+    color: white;
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0.7rem 1.5rem;
+    border-radius: 0;
+    background: transparent;
+    border: none;
+    transition: all 0.3s ease;
+  }
+  
+  /* Hover effect */
+  .nav-pills .nav-link:hover {
+    background-color: #ff9900; /* orange on hover */
+    color: #fff;
+  }
+  
+  /* Active tab */
+  .nav-pills .nav-link.active {
+    background-color: #f08c1d; /* orange background */
+    color: white;
+    font-weight: 700;
+  }
+  
+  /* Section title style (optional) */
+  .section-title h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: 1px;
+  }
+  
+  /* Optional inner border effect for each tab item */
+  .nav-pills .nav-item {
+    position: relative;
+  }
+  
+  .nav-pills .nav-item:not(:last-child)::after {
+    content: "";
+    position: absolute;
+    right: -0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50%;
+    width: 1px;
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  
+
+  /* General Body/Background Styling */
+
+/* Dark Blur Effect for index-page */
+.index-page {
+    background-image: url(Images/about.jpg); /* Background image */
+    background-size: cover; /* Ensure the image covers the entire body */
+    background-position: center center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from tiling */
+    background-attachment: fixed; /* Optional: Makes the background stay fixed when scrolling */
+    position: relative; /* Position the container for the overlay */
+    margin: 0; /* Remove default body margin */
+    padding: 0; /* Remove default body padding */
+}
+
+/* Add a dark blur overlay */
+.index-page::before {
+    content: ''; /* Empty content for the overlay */
+    position: absolute; /* Position the overlay */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent black overlay */
+    backdrop-filter: blur(5px); /* Apply blur effect */
+    z-index: -1; /* Place the overlay behind the content */
+}
+
+/* Adjust the main service container to position correctly */
+.service {
+    /* The screenshot shows the cake boxes and discount section
+       within a dark background that fills the width, with the
+       top half having a solid lighter background.
+       For simplicity, let's assume 'service' is the section below the
+       lighter background, and its background itself will be dark.
+       If the top section is also part of this HTML, we'd need to adjust. */
+    /* If the background image is for the whole body, no specific background here */
+    padding-top: 50px; /* Adjust as needed */
+    padding-bottom: 50px; /* Adjust as needed */
+}
+
+/* Custom Primary Color (Orange) */
+/* Override Bootstrap's --bs-primary if using Sass, or define directly */
+.bg-primary {
+    background-color: #f7931e !important; /* A bright orange color */
+    border: none !important; /* Remove any default primary border */
+}
+
+.btn-primary {
+    background-color: #f7931e !important; /* Orange button background */
+    border-color: #f7931e !important; /* Orange button border */
+    color: #ffffff !important; /* White text for the button */
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 15px 40px !important; /* Adjust padding to make it look like the screenshot button */
+    border-radius: 0 !important; /* Square corners */
+}
+
+/* Styling for the cake boxes */
+.col-lg-4 .bg-primary {
+    padding: 30px !important; /* Adjust internal padding of the boxes */
+    border: 2px solid #ffffff; /* White border as seen in the screenshot */
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+}
+
+.col-lg-4 .bg-primary h4 {
+    font-size: 24px; /* Adjust heading size */
+    font-weight: bold; /* Make heading bold */
+    margin-bottom: 20px; /* Space below heading */
+    color: #ffffff; /* Ensure heading text is white */
+}
+
+.col-lg-4 .bg-primary p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 30px; /* Space below paragraph */
+    color: #ffffff; /* Ensure paragraph text is white */
+}
+
+/* READ MORE Button Styling */
+.read-more-btn {
+    background-color: #f7931e; /* Orange background */
+    color: #ffffff !important; /* White text */
+    padding: 10px 20px; /* Padding for the button */
+    text-decoration: none; /* Remove underline */
+    border-radius: 0; /* Square corners */
+    display: inline-block; /* Allows padding and width */
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s ease; /* Smooth transition on hover */
+    text-transform: uppercase;
+}
+
+.read-more-btn:hover {
+    background-color: gold; /* Slightly darker orange on hover */
+    color: #ffffff !important;
+}
+
+.read-more-btn i {
+    margin-left: 8px; /* Space between text and arrow icon */
+}
+
+/* Styling for the Discount Section */
+.discount-section {
+    margin-top: 50px; /* Space between cake boxes and discount section */
+    padding-top: 50px; /* Padding above text */
+    padding-bottom: 50px; /* Padding below button */
+}
+
+.discount-section h1 {
+    font-size: 48px; /* Large font size */
+    font-weight: bold; /* Bold text */
+    color: #ffffff; /* White text */
+    margin-bottom: 30px !important; /* Space below heading */
+    text-transform: uppercase;
+    letter-spacing: 2px; /* Slightly spread out letters */
+}
+
+/* Order Now Button in Discount Section */
+.order-now-btn {
+    /* Uses .btn-primary styles defined above */
+    /* No additional specific styles needed here unless different from general .btn-primary */
+}
+
+/* Responsive adjustments (optional, but good practice) */
+@media (max-width: 768px) {
+    .col-lg-4 .bg-primary {
+        margin-bottom: 30px; /* Add space between stacked boxes on smaller screens */
+    }
+    .discount-section h1 {
+        font-size: 36px; /* Adjust font size for smaller screens */
+    }
 }
