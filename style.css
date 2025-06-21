@@ -5,11 +5,19 @@
     box-sizing: border-box; /* Ensures consistent sizing across elements */
 }
 
+/* Styling for Header Background */
+header.bg-warning {
+    background: linear-gradient(to right, #ffb6c1, #ffb6c1); /* Gradient from light pink to darker pink */
+    color: #fff; /* Ensure text is white for visibility */
+    padding: 20px; /* Add padding for spacing */
+    text-align: center; /* Center-align the text */
+}
+
 
 
 /* Gold Text Styling */
 .text-gold {
-    color: gold; /* Set text color to gold */
+    color: #FFB6C1; /* Set text color to gold */
     font-weight: bold; /* Optional: Make the text bold */
 }
 
@@ -33,6 +41,11 @@
     background: #945719; /* Navbar background color */
     padding-left: 50px; /* Left padding for content */
     font-weight: bold; /* Bold font for navbar text */
+}
+
+/* Override Bootstrap bg-primary class */
+.bg-primary {
+    background-color: #FFB6C1 !important; /* Set background color to light pink */
 }
 
 /* Body Styling */
@@ -191,7 +204,7 @@ header.bg-warning {
 }
 
 .container-fluid.bg-dark h1, .container-fluid.bg-dark h4 {
-    color: #ffcc33; /* Highlighted text color */
+    color: #FFB6C1; /* Highlighted text color */
 }
 
 .container-fluid.bg-dark p {
@@ -315,14 +328,14 @@ header.bg-warning {
 
 /* Dark Blur Effect for index-page */
 .index-page {
-    background-image: url(Images/about.jpg); /* Background image */
+    background-image: url(Images/Gallery\ 5.jpeg); /* Background image */
     background-size: cover; /* Ensure the image covers the entire body */
-    background-position: center center; /* Center the image */
     background-repeat: no-repeat; /* Prevent the image from tiling */
     background-attachment: fixed; /* Optional: Makes the background stay fixed when scrolling */
     position: relative; /* Position the container for the overlay */
     margin: 0; /* Remove default body margin */
     padding: 0; /* Remove default body padding */
+    z-index: 1;
 }
 
 /* Add a dark blur overlay */
