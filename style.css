@@ -21,7 +21,6 @@ header.bg-warning {
     font-weight: bold; /* Optional: Make the text bold */
 }
 
-/* Custom Styling for Order Now Button */
 /* Override Bootstrap Styling for Order Now Button */
 .order-now-btn {
     background-color: white !important; /* Set background to white */
@@ -322,10 +321,6 @@ header.bg-warning {
     background: rgba(255, 255, 255, 0.2);
   }
 
-  
-
-  /* General Body/Background Styling */
-
 /* Dark Blur Effect for index-page */
 .index-page {
     background-image: url(Images/Gallery\ 5.jpeg); /* Background image */
@@ -353,19 +348,13 @@ header.bg-warning {
 
 /* Adjust the main service container to position correctly */
 .service {
-    /* The screenshot shows the cake boxes and discount section
-       within a dark background that fills the width, with the
-       top half having a solid lighter background.
-       For simplicity, let's assume 'service' is the section below the
-       lighter background, and its background itself will be dark.
-       If the top section is also part of this HTML, we'd need to adjust. */
     /* If the background image is for the whole body, no specific background here */
     padding-top: 50px; /* Adjust as needed */
     padding-bottom: 50px; /* Adjust as needed */
 }
 
-/* Custom Primary Color (Orange) */
-/* Override Bootstrap's --bs-primary if using Sass, or define directly */
+
+/* Override Bootstrap's --bs-primary */
 .bg-primary {
     background-color: #f7931e !important; /* A bright orange color */
     border: none !important; /* Remove any default primary border */
@@ -441,12 +430,6 @@ header.bg-warning {
     letter-spacing: 2px; /* Slightly spread out letters */
 }
 
-/* Order Now Button in Discount Section */
-.order-now-btn {
-    /* Uses .btn-primary styles defined above */
-    /* No additional specific styles needed here unless different from general .btn-primary */
-}
-
 /* Responsive adjustments (optional, but good practice) */
 @media (max-width: 768px) {
     .col-lg-4 .bg-primary {
@@ -455,4 +438,10 @@ header.bg-warning {
     .discount-section h1 {
         font-size: 36px; /* Adjust font size for smaller screens */
     }
+}
+/* Styling for Heart Icon Container */
+.bg-primary.border-inner {
+    background-color: white !important; /* Set the background to white */
+    border: 2px solid black; /* Add a black border */
+    border-radius: 50%; /* Make the container circular */
 }
