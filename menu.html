@@ -14,36 +14,35 @@
 </head>
 <body>
     <!--NavBar-->
-    <div class="content">
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-          <div class="container-fluid">
-              <a class="navbar-brand d-flex align-items-center" href="index.html" id="logo">
-                  <img src="Images/logo.jpg" alt="logo" class="navbar-logo">
-                  <span class="ms-2">The Sweet Spot</span>
-              </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                  <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                  <ul class="navbar-nav">
-                      <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
-                      <li class="nav-item dropdown">
-                          <a href="#" class="nav-link">Menu</a>
-                          <div class="dropdown-menu">
-                              <a href="#" class="dropdown-item">Container Cake</a>
-                              <a href="#" class="dropdown-item">Cupcake</a>
-                              <a href="#" class="dropdown-item">Cake Cups</a>
-                              <a href="#" class="dropdown-item">Cookies</a>
-                              <a href="#" class="dropdown-item">Chocolate-covered Fruits</a>
-                              <a href="#" class="dropdown-item">Macarons</a>
-                          </div>
-                      </li>
-                      <li class="nav-item"><a class="nav-link" href="gallery.html">Cake Gallery</a></li>
-                      <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
-                      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
-                  </ul>
-              </div>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand d-flex align-items-center" href="index.html" id="logo">
+            <img src="Images/logo.jpg" alt="logo" class="navbar-logo">
+            <span class="ms-2">The Sweet Spot</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+              <li class="nav-item dropdown">
+                <a href="#" class="nav-link dropdown-toggle" id="menuDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Menu</a>
+                <ul class="dropdown-menu" aria-labelledby="menuDropdown">
+                  <li><a href="tab-1" class="dropdown-item">Container Cake</a></li>
+                  <li><a href="tab-2" class="dropdown-item">Cupcake</a></li>
+                  <li><a href="tab-3" class="dropdown-item">Cake Cups</a></li>
+                  <li><a href="tab-4" class="dropdown-item">Cookies</a></li>
+                  <li><a href="tab-5" class="dropdown-item">Chocolate-covered Fruits</a></li>
+                  <li><a href="tab-6" class="dropdown-item">Macarons</a></li>
+                </ul>
+              </li>
+              <li class="nav-item"><a class="nav-link" href="gallery.html">Cake Gallery</a></li>
+              <li class="nav-item"><a class="nav-link" href="about.html">About us</a></li>
+              <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
           </div>
+        </div>
       </nav>
 <!--slogan-->
 <header class="bg-warning text-center py-4">
@@ -702,23 +701,12 @@
         </div>
     </div>
 </div>
-<!-- Footer Endze -->
+<!-- Footer End -->
 <button onclick="scrollToTop()" class="btn btn-secondary" id="backToTop" style="position: fixed; bottom: 20px; right: 20px; display: none;">
     ↑ 
   </button>
   
   <script>
-  function openLightbox(src) {
-    const lightbox = document.getElementById('lightbox');
-    const lightboxImg = document.getElementById('lightbox-img');
-    lightboxImg.src = src; //Set image source
-    lightbox.style.display = 'block'; //show the lightbox
-    }
-    
-    function closeLightbox() {
-      const lightbox = document.getElementById('lightbox');
-      lightbox.style.display = 'none'; //Hide the lightbox
-      }
 
   function checkoutCart() {
     if (cart.length === 0) {
@@ -765,6 +753,17 @@
      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
      <script>
+          function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = src; // Set the image source
+    lightbox.style.display = 'block'; // Show the lightbox
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none'; // Hide the lightbox
+  }
         const flavourOptions = {
           "Container Cake": {
             "Vanilla": 25,
