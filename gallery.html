@@ -51,6 +51,142 @@
                 <p>Too sweet to stress</p>
             </div>
         </header>
+        <div class="container py-5">
+            <h2 class="text-center mb-4">Cake Gallery</h2>
+            <div class="row g-4">
+                <!-- Lightbox Container -->
+<div id="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000;">
+    <img id="lightbox-img" src="" alt="Gallery Image" style="max-width: 90%; max-height: 90%; margin: auto; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+    <button onclick="closeLightbox()" style="position: absolute; top: 10px; right: 10px; background: white; border: none; padding: 10px; cursor: pointer; font-size: 1rem; border-radius: 5px;">Close</button>
+  </div>
+  
+              <!-- Gallery Item 1 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/bento birthday cake.jpeg" class="card-img-top img-fluid" alt="Birthday Bento Cake" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Birthday Bento Cake</h5>
+                    <p class="card-text">A classic vanilla cake with a fluffy texture and rich flavor.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Gallery Item 2 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/Gallery 7.jpg" class="card-img-top img-fluid" alt="Custom Cake" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Custom Cake</h5>
+                    <p class="card-text">Fluffy texture and rich flavor.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Gallery Item 3 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/Gallery 2.jpeg" class="card-img-top img-fluid" alt="Vanilla Cake" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Vanilla Cake</h5>
+                    <p class="card-text">Vanilla cake with a fluffy texture and rich flavor.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Gallery Item 4 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/Gallery 3.jpeg" class="card-img-top img-fluid" alt="Chocolate Cake" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Chocolate Cake</h5>
+                    <p class="card-text">Rich and decadent chocolate cake for all chocolate lovers.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Gallery Item 5 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/Gallery 4.jpeg" class="card-img-top img-fluid" alt="Vanilla Cupcake" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Vanilla Cupcake</h5>
+                    <p class="card-text">Fluffy texture and rich flavor.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Gallery Item 6 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/Gallery 5.jpeg" class="card-img-top img-fluid" alt="Red Velvet Cupcake" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Red Velvet Cupcake</h5>
+                    <p class="card-text">A vibrant red velvet cake.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Gallery Item 7 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/Gallery 6.jpeg" class="card-img-top img-fluid" alt="Chocolate Cupcake" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Chocolate Cupcake</h5>
+                    <p class="card-text">Fluffy texture and rich flavor.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Gallery Item 8 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/Gallery p5.jpg" class="card-img-top img-fluid" alt="Cookies & Cream Cupcake" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Cookies & Cream Cupcake</h5>
+                    <p class="card-text">Smooth cream and chocolate.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Gallery Item 9 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/gallery p2.jpg" class="card-img-top img-fluid" alt="Cupcakes" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Cupcakes</h5>
+                    <p class="card-text">Delicious cupcakes in various flavors and designs.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Gallery Item 10 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/cookies2.jpg" class="card-img-top img-fluid" alt="Cookies" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Cookies</h5>
+                    <p class="card-text">Freshly baked cookies with a variety of flavors.</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Gallery Item 11 -->
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/Macaroons.jpg" class="card-img-top img-fluid" alt="Macarons" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Macarons</h5>
+                    <p class="card-text">Colorful and tasty macarons in different flavors.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 col-sm-6">
+                <div class="card h-100 shadow-sm">
+                  <img src="Images/gallery 1.jpeg" class="card-img-top img-fluid" alt="Cake cups" style="height: 200px; object-fit: cover;" onclick="openLightbox(this.src)">
+                  <div class="card-body text-center p-3">
+                    <h5 class="card-title">Cake cups</h5>
+                    <p class="card-text">snack pack in small container.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="container py-5 text-center">
+            <h2 class="mb-4">Ready to Sweeten Your Day?</h2>
+            <p>Explore our menu or contact us to place your order today!</p>
+            <a href="menu.html" class="btn btn-primary">View Menu</a>
+            <a href="contact.html" class="btn btn-success">Contact Us</a>
+          </div>
 <!-- Footer Start -->
 <div class="container-fluid bg-dark text-white py-5">
     <div class="container">
@@ -88,5 +224,34 @@
     </div>
 </div>
 <!-- Footer End -->
+<button onclick="scrollToTop()" class="btn btn-secondary" id="backToTop" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+    ↑ 
+  </button>
+  
+  <script>
+      function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = src; // Set the image source
+    lightbox.style.display = 'block'; // Show the lightbox
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none'; // Hide the lightbox
+  }
+    window.onscroll = function () {
+      const backToTop = document.getElementById("backToTop");
+      if (document.documentElement.scrollTop > 100) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+  
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
 </body>
 </html>
