@@ -81,14 +81,20 @@
                 <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-6">Macaroons</a>
             </li>
 
+            <!-- Lightbox Container -->
+<div id="lightbox" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0, 0, 0, 0.8); z-index: 1000;">
+    <img id="lightbox-img" src="" alt="Gallery Image" style="max-width: 90%; max-height: 90%; margin: auto; display: block; position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);">
+    <button onclick="closeLightbox()" style="position: absolute; top: 10px; right: 10px; background: white; border: none; padding: 10px; cursor: pointer; font-size: 1rem; border-radius: 5px;">Close</button>
+  </div>
+
               </ul>
               <div class="tab-content">
                   <div id="tab-1" class="tab-pane fade show p-0 active">
                       <div class="row g-3">
-                          <div class="col-lg-6">
+                          <div class="col-lg-6" >
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/Bento cakes.jpeg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/Bento cakes.jpeg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P100.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -101,7 +107,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/container cake vanilla.jpeg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/container cake vanilla.jpeg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P25.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -114,7 +120,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/Cointainer chocolate.jpg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/Cointainer chocolate.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P28.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -127,7 +133,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/home pic 1.jpeg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/home pic 1.jpeg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P40.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -140,7 +146,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/Cointainer red velvet.jpg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/Cointainer red velvet.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P30.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -153,12 +159,12 @@
                           <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/Cointaner cookies&cream.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/Cointaner cookies&cream.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P30.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                     <h5 class="text-uppercase">cookies and cream</h5>
-                                    <span>Love taste!! come here get this</span>
+                                    <span>Love cream try this smooth cream,Tasty!!</span>
                                     <button class="btn btn-success mt-3" onclick="preFillOrder('Cookies and cream')">Place Order</button>
                                 </div>
                             </div>
@@ -166,7 +172,7 @@
                           <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/Cake with cupcakes.jpeg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/Cake with cupcakes.jpeg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P250.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -183,7 +189,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/Gallery 4.jpeg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/Gallery 4.jpeg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P10.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -196,7 +202,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/cupcakes.jpeg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/cupcakes.jpeg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -209,7 +215,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/Gallery 6.jpeg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/Gallery 6.jpeg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -222,7 +228,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/cupcake deathbychocolate.jpeg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/cupcake deathbychocolate.jpeg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P15.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -235,7 +241,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/cupcake&oreo.jpeg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/cupcake&oreo.jpeg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -248,7 +254,7 @@
                           <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/box of cupcakes.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/box of cupcakes.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P60.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -267,7 +273,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/cake cup vanilla.jpeg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/cake cup vanilla.jpeg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P25.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -280,7 +286,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/cake cup chocolate.jpg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/cake cup chocolate.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P28.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -293,7 +299,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/cake cup red velvet.jpg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/cake cup red velvet.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P30.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -306,7 +312,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/cake cup cookies and cream.jpg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/cake cup cookies and cream.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P30.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -319,7 +325,7 @@
                           <div class="col-lg-6">
                               <div class="d-flex h-100">
                                   <div class="flex-shrink-0">
-                                      <img class="img-fluid" src="Images/death by choco cup.jpg" alt="" style="width: 150px; height: 85px;">
+                                      <img class="img-fluid" src="Images/death by choco cup.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                       <h4 class="bg-dark text-primary p-2 m-0">P35.00</h4>
                                   </div>
                                   <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -336,7 +342,7 @@
                         <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/oreo cookies.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/oreo cookies.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -349,7 +355,7 @@
                         <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/Chocolate chip oreo.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/Chocolate chip oreo.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -362,7 +368,7 @@
                         <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/Red velvet cookie.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/Red velvet cookie.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -375,7 +381,7 @@
                         <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/Strawberry  cookies.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/Strawberry  cookies.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -388,7 +394,7 @@
                         <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/vanilla cookies.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/vanilla cookies.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -401,7 +407,7 @@
                         <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/cookies and cream.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/cookies and cream.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -414,7 +420,7 @@
                         <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/m&m cookies.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/m&m cookies.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P15.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -427,7 +433,7 @@
                         <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/monster cookies.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/monster cookies.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P15.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -440,7 +446,7 @@
                         <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/Smores cookies.jpg" alt="" style="width: 150px; height: 85px;">
+                                    <img class="img-fluid" src="Images/Smores cookies.jpg" alt="" style="width: 150px; height: 85px;"onclick="openLightbox(this.src)">
                                     <h4 class="bg-dark text-primary p-2 m-0">P15.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -453,8 +459,8 @@
                         <div class="col-lg-6">
                             <div class="d-flex h-100">
                                 <div class="flex-shrink-0">
-                                    <img class="img-fluid" src="Images/box of cookies.jpg" alt="" style="width: 150px; height: 85px;">
-                                    <h4 class="bg-dark text-primary p-2 m-0">P60.00</h4>
+                                    <img class="img-fluid" src="Images/box of cookies.jpg" alt="" style="width: 150px; height: 85px;" onclick="openLightbox(this.src)">
+                                    <h4 class="bg-dark text-primary p-2 m-0">P15.00</h4>
                                 </div>
                                 <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
                                     <h5 class="text-uppercase">Box</h5>
@@ -472,7 +478,7 @@
                       <div class="col-lg-6">
                           <div class="d-flex h-100">
                               <div class="flex-shrink-0">
-                                  <img class="img-fluid" src="Images/Choco strawberries.jpg" alt="" style="width: 150px; height: 85px;">
+                                  <img class="img-fluid" src="Images/Choco strawberries.jpg" alt="" style="width: 150px; height: 85px;" onclick="openLightbox(this.src)">
                                   <h4 class="bg-dark text-primary p-2 m-0">P35.00</h4>
                               </div>
                               <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -486,7 +492,7 @@
                       <div class="col-lg-6">
                           <div class="d-flex h-100">
                               <div class="flex-shrink-0">
-                                  <img class="img-fluid" src="Images/white choco strawberries.jpg" alt="" style="width: 150px; height: 85px;">
+                                  <img class="img-fluid" src="Images/white choco strawberries.jpg" alt="" style="width: 150px; height: 85px;" onclick="openLightbox(this.src)">
                                   <h4 class="bg-dark text-primary p-2 m-0">P38.00</h4>
                               </div>
                               <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -500,7 +506,7 @@
                       <div class="col-lg-6">
                           <div class="d-flex h-100">
                               <div class="flex-shrink-0">
-                                  <img class="img-fluid" src="Images/choco grapes.jpg" alt="" style="width: 150px; height: 85px;">
+                                  <img class="img-fluid" src="Images/choco grapes.jpg" alt="" style="width: 150px; height: 85px;" onclick="openLightbox(this.src)">
                                   <h4 class="bg-dark text-primary p-2 m-0">P30.00</h4>
                               </div>
                               <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -514,7 +520,7 @@
                       <div class="col-lg-6">
                           <div class="d-flex h-100">
                               <div class="flex-shrink-0">
-                                  <img class="img-fluid" src="Images/mixed choco berries.jpg" alt="" style="width: 150px; height: 85px;">
+                                  <img class="img-fluid" src="Images/mixed choco berries.jpg" alt="" style="width: 150px; height: 85px;" onclick="openLightbox(this.src)">
                                   <h4 class="bg-dark text-primary p-2 m-0">P45.00</h4>
                               </div>
                               <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -532,7 +538,7 @@
                     <div class="col-lg-6">
                         <div class="d-flex h-100">
                             <div class="flex-shrink-0">
-                                <img class="img-fluid" src="Images/macaroons vanilla.jpg" alt="" style="width: 150px; height: 85px;">
+                                <img class="img-fluid" src="Images/macaroons vanilla.jpg" alt="" style="width: 150px; height: 85px;" onclick="openLightbox(this.src)">
                                 <h4 class="bg-dark text-primary p-2 m-0">P10.00</h4>
                             </div>
                             <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -545,7 +551,7 @@
                     <div class="col-lg-6">
                         <div class="d-flex h-100">
                             <div class="flex-shrink-0">
-                                <img class="img-fluid" src="Images/macaroons chocolate.jpg" alt="" style="width: 150px; height: 85px;">
+                                <img class="img-fluid" src="Images/macaroons chocolate.jpg" alt="" style="width: 150px; height: 85px;" onclick="openLightbox(this.src)">
                                 <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                             </div>
                             <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -558,7 +564,7 @@
                     <div class="col-lg-6">
                         <div class="d-flex h-100">
                             <div class="flex-shrink-0">
-                                <img class="img-fluid" src="Images/macaroons strawberry.jpg" alt="" style="width: 150px; height: 85px;">
+                                <img class="img-fluid" src="Images/macaroons strawberry.jpg" alt="" style="width: 150px; height: 85px;" onclick="openLightbox(this.src)">
                                 <h4 class="bg-dark text-primary p-2 m-0">P12.00</h4>
                             </div>
                             <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -571,7 +577,7 @@
                     <div class="col-lg-6">
                         <div class="d-flex h-100">
                             <div class="flex-shrink-0">
-                                <img class="img-fluid" src="Images/macaroons matcha.jpg" alt="" style="width: 150px; height: 85px;">
+                                <img class="img-fluid" src="Images/macaroons matcha.jpg" alt="" style="width: 150px; height: 85px;" onclick="openLightbox(this.src)">
                                 <h4 class="bg-dark text-primary p-2 m-0">P15.00</h4>
                             </div>
                             <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
@@ -590,10 +596,10 @@
   </div>
   <!-- Products End -->
  
-  <!-- Order Form -->
-  <div class="container py-5">
+ <!-- Order Form -->
+<div class="container py-5">
     <h2 class="mb-4 text-center">Place Your Order</h2>
-    <form id="orderForm" onsubmit="sendWhatsApp(); return false;">
+    <form id="orderForm" onsubmit="calculatePrice(); return false;">
       <div class="mb-3">
         <label for="name" class="form-label">Your Name</label>
         <input type="text" class="form-control" id="name" required />
@@ -604,7 +610,7 @@
       </div>
       <div class="mb-3">
         <label for="product" class="form-label">Product</label>
-        <select class="form-select" id="product" onchange="loadFlavors()" required>
+        <select class="form-select" id="product" onchange="loadFlavorsAndPrice(); calculatePrice();" required>
           <option value="">-- Select Product --</option>
           <option value="Container Cake">Container Cake</option>
           <option value="Cupcake">Cupcake</option>
@@ -616,92 +622,255 @@
       </div>
       <div class="mb-3" id="flavorDiv" style="display:none;">
         <label for="flavor" class="form-label">Flavor</label>
-        <select class="form-select" id="flavor"></select>
+        <select class="form-select" id="flavor" onchange="calculatePrice();" required></select>
       </div>
       <div class="mb-3">
         <label for="quantity" class="form-label">Quantity</label>
-        <input type="number" class="form-control" id="quantity" min="1" required />
+        <input type="number" class="form-control" id="quantity" min="1" onchange="calculatePrice();" required />
       </div>
       <div class="mb-3">
         <label for="notes" class="form-label">Extra Notes</label>
         <textarea class="form-control" id="notes" rows="3" placeholder="Add fillings or flavors here..."></textarea>
       </div>
-      <button type="submit" class="btn btn-success">Send via WhatsApp</button>
+      <div class="mb-3">
+        <label for="price" class="form-label">Total Price</label>
+        <input type="text" class="form-control" id="price" readonly />
+      </div>
+      <button type="button" class="btn btn-primary" onclick="checkout()">Checkout</button>
     </form>
   </div>
-
   <!-- Footer Start -->
-  <div class="container-fluid bg-dark text-white py-5">
+<div class="container-fluid bg-dark text-white py-5">
     <div class="container">
-      <div class="row">
-        <!-- Footer Content -->
-      </div>
+        <div class="row">
+            <!-- Brand Section -->
+            <div class="col-md-4 text-center mb-4">
+                <h1 class="text-uppercase"><i class=""></i>The Sweet Spot</h1>
+                <p>Too sweet to stress</p>
+            </div>
+            <!-- Contact Section -->
+            <div class="col-md-4 text-center mb-4">
+                <h4>Contact Us</h4>
+                <p>Call/Text: 72 685 207</p>
+                <p>Location: Bokaa</p>
+                <div class="d-flex justify-content-center mt-3">
+                    <a class="btn btn-primary me-2" href="https://www.instagram.com/the.sweetspot001?igsh=MWtteDE2b3A1ZDhpaQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-primary" href="https://www.tiktok.com/@the.sweet.spot_0?_t=ZS-8xHjp8Zy3QV&_r=1"><i class="fab fa-tiktok"></i></a>
+                </div>
+            </div>
+            <!-- Newsletter Section -->
+            <div class="col-md-4 text-center mb-4">
+                <h4>Newsletter</h4>
+                <p>Join us and receive our monthly specials via email</p>
+                <form action="">
+                    <div class="input-group">
+                        <input type="email" class="form-control" placeholder="Your Email">
+                        <button class="btn btn-primary">Sign Up</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <p>&copy; 2025 The Sweet Spot. All Rights Reserved.</p>
+        </div>
     </div>
-  </div>
-  <!-- Footer End -->
-
-  <!-- Scripts -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</div>
+<!-- Footer End -->
+<button onclick="scrollToTop()" class="btn btn-secondary" id="backToTop" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+    ↑ 
+  </button>
+  
   <script>
-    function sendWhatsApp() {
-      const name = document.getElementById("name").value;
-      const contact = document.getElementById("contact").value;
-      const product = document.getElementById("product").value;
-      const flavor = document.getElementById("flavor").value;
-      const quantity = document.getElementById("quantity").value;
-      const notes = document.getElementById("notes").value;
-
-      const phoneNumber = "26772685207";
-      const message = `*New Order from Sweet Spot Website*%0A` +
-                      `Name: ${name}%0A` +
-                      `Phone: ${contact}%0A` +
-                      `Product: ${product}%0A` +
-                      `Flavor: ${flavor}%0A` +
-                      `Quantity: ${quantity}%0A` +
-                      `Extra Notes: ${notes}`;
-
-      const url = `https://wa.me/${phoneNumber}?text=${message}`;
-      const confirmSend = confirm("Do you want to send this order via WhatsApp?");
-      if (confirmSend) {
-        window.open(url, "_blank");
+    window.onscroll = function () {
+      const backToTop = document.getElementById("backToTop");
+      if (document.documentElement.scrollTop > 100) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
       }
-    }
-
-    function loadFlavors() {
-      const product = document.getElementById("product").value;
-      const flavorDiv = document.getElementById("flavorDiv");
-      const flavorSelect = document.getElementById("flavor");
-      flavorDiv.style.display = "none";
-      flavorSelect.innerHTML = "";
-
-      const flavors = {
-        "Container Cake": ["Vanilla", "Chocolate", "Death by Chocolate", "Red Velvet", "Cookies & Cream"],
-        "Cupcake": ["Vanilla", "Chocolate", "Red Velvet", "Cookies & Cream", "Death by Chocolate"],
-        "Cake Cups": ["Vanilla", "Chocolate", "Red Velvet", "Cookies & Cream", "Death by Chocolate"],
-        "Cookies": ["Oreo", "Chocolate Chip", "Red Velvet", "Strawberry", "Vanilla (springles)", "Cookies and Cream", "M&M", "Monster", "S’mores"],
-        "Chocolate-covered Fruits": ["Choco Strawberries", "White-choco strawberries", "Choco-Grapes", "Mixed berries"],
-        "Macarons": ["Vanilla", "Chocolate", "Strawberry", "Matcha"]
-      };
-
-      if (flavors[product]) {
-        flavors[product].forEach(flavor => {
-          const opt = document.createElement("option");
-          opt.text = flavor;
-          opt.value = flavor;
-          flavorSelect.add(opt);
-        });
-        flavorDiv.style.display = "block";
-      }
-    }
-
-    function preFillOrder(productName) {
-      document.getElementById("product").value = productName;
-      loadFlavors();
-      window.scrollTo({
-        top: document.getElementById("orderForm").offsetTop,
-        behavior: "smooth"
-      });
+    };
+  
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
     }
   </script>
+  <!-- Scripts -->
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+     <script>
+          function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImg = document.getElementById('lightbox-img');
+    lightboxImg.src = src; // Set the image source
+    lightbox.style.display = 'block'; // Show the lightbox
+  }
+
+  function closeLightbox() {
+    const lightbox = document.getElementById('lightbox');
+    lightbox.style.display = 'none'; // Hide the lightbox
+  }
+        const flavourOptions = {
+          "Container Cake": {
+            "Vanilla": 25,
+            "Chocolate": 28,
+            "Death by Chocolate": 30,
+            "Red Velvet": 30,
+            "Cookies & Cream": 40
+          },
+          "Cupcake": {
+            "Vanilla": 10,
+            "Chocolate": 12,
+            "Red Velvet": 12,
+            "Cookies & Cream": 12,
+            "Death by Chocolate": 15,
+            "Box of 6": 60,
+            "Box of 12": 110
+          },
+          "Cake Cups": {
+            "Vanilla": 25,
+            "Chocolate": 28,
+            "Red Velvet": 30,
+            "Cookies & Cream": 30,
+            "Death by Chocolate": 35
+          },
+          "Cookies": {
+            "Oreo": 12,
+            "Chocolate Chip": 12,
+            "Red Velvet": 12,
+            "Strawberry": 12,
+            "Vanilla (springles)": 12,
+            "Cookies and Cream": 12,
+            "M&M": 15,
+            "Monster": 15,
+            "S’mores": 15,
+            "Box of Cookies (6)": 60,
+            "Box of Cookies (12)": 110
+          },
+          "Chocolate-covered Fruits": {
+            "Choco Strawberries": 35,
+            "White-choco strawberries": 38,
+            "Choco-Grapes": 25,
+            "Mixed berries": 45
+          },
+          "Macarons": {
+            "Vanilla": 10,
+            "Vanilla (Box of 5)": 50,
+            "Vanilla (Box of 10)": 90,
+            "Chocolate": 12,
+            "Chocolate (Box of 5)": 60,
+            "Chocolate (Box of 10)": 110,
+            "Strawberry": 12,
+            "Strawberry (Box of 5)": 60,
+            "Strawberry (Box of 10)": 110,
+            "Matcha": 15,
+            "Matcha (Box of 5)": 75,
+            "Matcha (Box of 10)": 140
+          }
+        };
+      
+        function loadFlavorsAndPrice() {
+          const product = document.getElementById("product").value;
+          const flavorDiv = document.getElementById("flavorDiv");
+          const flavorSelect = document.getElementById("flavor");
+          flavorDiv.style.display = "none";
+          flavorSelect.innerHTML = "";
+      
+          const flavors = Object.keys(flavourOptions[product] || {});
+          if (flavors.length > 0) {
+            flavors.forEach(flavor => {
+              const opt = document.createElement("option");
+              opt.text = flavor;
+              opt.value = flavor;
+              flavorSelect.add(opt);
+            });
+            flavorDiv.style.display = "block";
+            flavorSelect.value = flavors[0]; // Automatically select the first flavor
+            calculatePrice(); // Update the price based on the default flavor
+          }
+        }
+      
+        function calculatePrice() {
+          const product = document.getElementById("product").value;
+          const flavor = document.getElementById("flavor").value;
+          const quantity = document.getElementById("quantity").value;
+      
+          if (product && flavor && quantity > 0) { // Validate quantity
+            const pricePerUnit = flavourOptions[product]?.[flavor] || 0;
+            const totalPrice = pricePerUnit * quantity;
+      
+            document.getElementById("price").value = `P${totalPrice.toFixed(2)}`;
+          } else {
+            document.getElementById("price").value = ""; // Clear price if invalid quantity
+          }
+        }
+      
+        function preFillOrder(productName) {
+          // Set the product field value
+          document.getElementById("product").value = productName;
+      
+          // Trigger the flavor loading and price calculation
+          loadFlavorsAndPrice();
+          calculatePrice();
+      
+          // Scroll to the order form
+          const orderForm = document.getElementById("orderForm");
+          window.scrollTo({
+            top: orderForm.offsetTop,
+            behavior: "smooth"
+          });
+        }
+      
+        function checkout() {
+          const name = document.getElementById("name").value;
+          const contact = document.getElementById("contact").value;
+          const product = document.getElementById("product").value;
+          const flavor = document.getElementById("flavor").value;
+          const quantity = document.getElementById("quantity").value;
+          const notes = document.getElementById("notes").value;
+          const price = document.getElementById("price").value;
+      
+          if (!name || !contact || !product || !flavor || !quantity || !price) {
+            alert("Please fill out all required fields.");
+            return;
+          }
+      
+          const confirmation = confirm(
+            `Checkout Details:\n\nName: ${name}\nContact: ${contact}\nProduct: ${product}\nFlavor: ${flavor}\nQuantity: ${quantity}\nTotal Price: ${price}\nNotes: ${notes}\n\nDo you want to proceed?`
+          );
+      
+          if (confirmation) {
+            sendWhatsApp();
+          }
+        }
+      
+        function sendWhatsApp() {
+          const name = document.getElementById("name").value;
+          const contact = document.getElementById("contact").value;
+          const product = document.getElementById("product").value;
+          const flavor = document.getElementById("flavor").value;
+          const quantity = document.getElementById("quantity").value;
+          const notes = document.getElementById("notes").value;
+          const price = document.getElementById("price").value;
+      
+          const phoneNumber = "26772685207";
+          const message = `*New Order from Sweet Spot Website*%0A` +
+                          `Name: ${name}%0A` +
+                          `Phone: ${contact}%0A` +
+                          `Product: ${product}%0A` +
+                          `Flavor: ${flavor}%0A` +
+                          `Quantity: ${quantity}%0A` +
+                          `Total Price: ${price}%0A` +
+                          `Extra Notes: ${notes}`;
+      
+          alert("Redirecting to WhatsApp...");
+          const url = `https://wa.me/${phoneNumber}?text=${message}`;
+          window.open(url, "_blank");
+        }
+      
+        function resetForm() {
+          document.getElementById("orderForm").reset();
+          document.getElementById("price").value = ""; // Clear the price field
+        }
+      </script>
 </body>
 </html>
