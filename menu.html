@@ -702,12 +702,23 @@
         </div>
     </div>
 </div>
-<!-- Footer End -->
+<!-- Footer Endze -->
 <button onclick="scrollToTop()" class="btn btn-secondary" id="backToTop" style="position: fixed; bottom: 20px; right: 20px; display: none;">
     ↑ 
   </button>
   
   <script>
+  function openLightbox(src) {
+    const lightbox = document.getElementById('lightbox');
+    const lightbox = document.getElementById('lightbox-img');
+    lightboxImg.src = src; //Set image source
+    lightbox. ee.display = 'block'; //show the lightbox
+    }
+    
+    function closeLightbox() {
+      const lightbox = document.getElementById('lightbox');
+      lightbox.style.display = 'none'; //Hide the lightbox
+      }
 
   function checkoutCart() {
     if (cart.length === 0) {
