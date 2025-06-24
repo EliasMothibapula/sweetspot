@@ -31,12 +31,12 @@
                     <li class="nav-item dropdown">
                         <a href="menu.html" class="nav-link">Menu</a>
                         <div class="dropdown-menu">
-                            <a href="#" class="dropdown-item">Container Cake</a>
-                            <a href="#" class="dropdown-item">Cupcake</a>
-                            <a href="#" class="dropdown-item">Cake Cups</a>
-                            <a href="#" class="dropdown-item">Cookies</a>
-                            <a href="#" class="dropdown-item">Chocolate-covered Fruits</a>
-                            <a href="#" class="dropdown-item">Macarons</a>
+                            <a href="menu.html#tab-1" class="dropdown-item">Container Cake</a>
+                            <a href="menu.html#tab-2" class="dropdown-item">Cupcake</a>
+                            <a href="menu.html#tab-3" class="dropdown-item">Cake Cups</a>
+                            <a href="menu.html#tab-4" class="dropdown-item">Cookies</a>
+                            <a href="menu.html#tab-5" class="dropdown-item">Chocolate-covered Fruits</a>
+                            <a href="menu.html#tab-6" class="dropdown-item">Macarons</a>
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link" href="gallery.html">Cake Gallery</a></li>
@@ -127,8 +127,8 @@
                 <p>Call/Text: 72 685 207</p>
                 <p>Location: Bokaa</p>
                 <div class="d-flex justify-content-center mt-3">
-                    <a class="btn btn-primary me-2" href="#"><i class="fab fa-instagram"></i></a>
-                    <a class="btn btn-primary" href="#"><i class="fab fa-tiktok"></i></a>
+                    <a class="btn btn-primary me-2" href="https://www.instagram.com/the.sweetspot001?igsh=MWtteDE2b3A1ZDhpaQ%3D%3D&utm_source=qr"><i class="fab fa-instagram"></i></a>
+                    <a class="btn btn-primary" href="https://www.tiktok.com/@the.sweet.spot_0?_t=ZS-8xHjp8Zy3QV&_r=1"><i class="fab fa-tiktok"></i></a>
                 </div>
             </div>
             <!-- Newsletter Section -->
@@ -149,6 +149,24 @@
     </div>
 </div>
 <!-- Footer End -->
+<button onclick="scrollToTop()" class="btn btn-secondary" id="backToTop" style="position: fixed; bottom: 20px; right: 20px; display: none;">
+    ↑ 
+  </button>
+  
+  <script>
+    window.onscroll = function () {
+      const backToTop = document.getElementById("backToTop");
+      if (document.documentElement.scrollTop > 100) {
+        backToTop.style.display = "block";
+      } else {
+        backToTop.style.display = "none";
+      }
+    };
+  
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: "smooth" });
+    }
+  </script>
 <!-- Font Awesome Script -->
 <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
