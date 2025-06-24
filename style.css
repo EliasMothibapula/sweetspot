@@ -523,3 +523,35 @@ blockquote-footer {
     color: #FF99A1; /* Slightly darker pink for footer text */
     font-weight: bold;
 }
+/* Style the dropdown menu */
+.navbar .dropdown-menu {
+  background-color: #f9cddc; /* Light pink background */
+  border: none; /* Remove border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+}
+
+/* Style dropdown items */
+.navbar .dropdown-item {
+  color: #333; /* Dark text color */
+  font-weight: bold; /* Bold text */
+  padding: 10px 20px; /* Add padding */
+  transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+/* Hover effect for dropdown items */
+.navbar .dropdown-item:hover {
+  background-color: #f7a8c4; /* Slightly darker pink on hover */
+  color: #fff; /* White text on hover */
+}
+
+/* Style the dropdown toggle */
+.navbar .dropdown-toggle {
+  color: #fff; /* White text */
+  font-weight: bold; /* Bold text */
+}
+
+/* Adjust dropdown menu position */
+.navbar .dropdown-menu {
+  margin-top: 10px; /* Add spacing below the toggle */
+  border-radius: 5px; /* Rounded corners */
+}
